@@ -1,0 +1,79 @@
+#countainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.image0 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.image1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+
+.image3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 10px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.image4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+}
+
+.image5 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 10px solid black;
+    margin-bottom: 10px;
+}
+
+.image6 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 10px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.image7 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
