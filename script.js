@@ -1,26 +1,20 @@
-let counter = 0
-const btn = document.querySelector('#countainer')
-btn.addEventListener('click', event => {
-    if (event.target.id === 'next' && counter < 7) {
-        ++counter
-        changeStyle()
-    }
-    if (event.target.id === 'prev' && counter > 0) {
-        --counter
-        changeStyle()
-    }
-    if (event.target.id === 'reset') {
-        counter = 0
-        changeStyle()
-    }
-})
-function changeStyle() {
-    if (counter < 8) {
-        let currentClassName = document.querySelector('#img1').className
-        document.querySelector('#img1').classList.remove(currentClassName)
-        let className = currentClassName
-        className = className.slice(0, 5) + counter
-        document.querySelector('#img1').classList.add(className)
+window.onload = function () {
+    let counter = 0
+    document.querySelector('#next').addEventListener('click', () => changeStyle(++counter))
+    document.querySelector('#prev').addEventListener('click', () => changeStyle(--counter))
+    document.querySelector('#reset').addEventListener('click', () => changeStyle(counter = 0))
+
+    function changeStyle() {
+        if (counter >= 0 && counter < 8) {
+            let currentClassName = document.querySelector('#img1').className
+            document.querySelector('#img1').classList.remove(currentClassName)
+            let className = currentClassName
+            className = className.slice(0, 5) + counter
+            document.querySelector('#img1').classList.add(className)
+        }
+        if (counter > 7 || counter < 0) {
+            counter = -1
+        }
     }
 }
 
